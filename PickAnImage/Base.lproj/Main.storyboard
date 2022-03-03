@@ -24,6 +24,11 @@
                                             <action selector="pickAnImage:" destination="BYZ-38-t0r" id="LIq-2T-27I"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Camera" id="pqS-oe-Qi7">
+                                        <connections>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="l0p-Ta-Pgc"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-30-1nR">
