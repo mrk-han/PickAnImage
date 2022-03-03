@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickAnImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9O-uG-hU1">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Pick" id="WT6-Oe-Rn2">
+                                        <connections>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="LIq-2T-27I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-30-1nR">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y9O-uG-hU1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9tv-am-h3r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNY-30-1nR" secondAttribute="trailing" constant="68" id="Cog-VG-tzr"/>
+                            <constraint firstItem="Y9O-uG-hU1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HRv-ls-F3t"/>
+                            <constraint firstItem="kNY-30-1nR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="269" id="OLK-qd-8mb"/>
+                            <constraint firstItem="kNY-30-1nR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Sly-z6-Lmc"/>
+                            <constraint firstItem="Y9O-uG-hU1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tfb-Na-roe"/>
+                            <constraint firstItem="Y9O-uG-hU1" firstAttribute="top" secondItem="kNY-30-1nR" secondAttribute="bottom" constant="226" id="UL6-Sb-v1S"/>
+                            <constraint firstItem="Y9O-uG-hU1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="623" id="wYk-sE-yIN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="WT6-Oe-Rn2" id="49J-a4-44G"/>
+                        <outlet property="imageView" destination="kNY-30-1nR" id="BBg-RI-vAk"/>
+                        <outlet property="toolbar" destination="Y9O-uG-hU1" id="R6t-ZV-tro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
