@@ -44,9 +44,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="WT6-Oe-Rn2" id="49J-a4-44G"/>
-                        <outlet property="imageView" destination="kNY-30-1nR" id="BBg-RI-vAk"/>
-                        <outlet property="toolbar" destination="Y9O-uG-hU1" id="R6t-ZV-tro"/>
+                        <outlet property="imagePickerView" destination="kNY-30-1nR" id="6f9-iz-1C4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
